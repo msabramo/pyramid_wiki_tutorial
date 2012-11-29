@@ -6,3 +6,4 @@ parts/
 var/
 *.pyc
 *.swp
+*.egg-info
