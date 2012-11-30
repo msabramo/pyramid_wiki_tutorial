@@ -1,10 +1,12 @@
 .installed.cfg
 bin/
 bootstrap.py
+develop-eggs/
 eggs
 parts/
 var/
 *.pyc
 *.swp
 *.egg-info
+*.sqlite
 .coverage
