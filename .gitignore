@@ -10,3 +10,4 @@ var/
 *.egg-info
 *.sqlite
 .coverage
+.tox
