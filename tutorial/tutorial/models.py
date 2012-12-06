@@ -1,3 +1,8 @@
+from pyramid.security import (
+    Allow,
+    Everyone,
+    )
+
 from sqlalchemy import (
     Column,
     Integer,
@@ -27,3 +32,8 @@ class Page(Base):
         self.name = name
         self.data = data
 
+class RootFactory(object):
+    __acl__ = [ (Allow, Everyone, 'view'),
+                (Allow, 'group:editors', 'edit') ]
+    def __init__(self, request):
+        pass
